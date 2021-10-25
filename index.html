@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>TRIAGULNIK</title>
+       <link rel="icon" href="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-9/64/triangle-icon.png">
+       <style>
+           body{
+               background-color: #000;
+               font-weight: bolder;
+               color: green;
+           }
+           </style>
+
+       </head>
+      <body>
+         <h1 id="trian"></h1>
+         <script>
+   let n = prompt("KOLKO SHE E GOLQM TREAGALNIKA?", "69"); 
+   let fontS = prompt("RAZMER NA BUKVITE", "4.2px")
+   let vid = prompt("VID TRIAGALNIK", "ravnobedren")
+
+  if (vid == "ravnobedren"){
+      vid = "center"
+  }else if (vid == "pravougulen"){
+      vid = "left"
+  }
+  let trian = "";
+  for (let i = 0; i < n; i++) {
+   for (let k = 0; k < n - i; k++) {
+      trian += "n"    
+    }
+    trian += "<br>"
+    // trian += "\n"
+  }
+  document.getElementById("trian").innerHTML = trian
+  document.getElementById("trian").style.fontSize = fontS 
+  document.getElementById("trian").style.textAlign = vid
+  console.log(trian)
+      </script>
+   </body>
+</html> 
